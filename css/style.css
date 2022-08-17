@@ -26,13 +26,24 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    align-items: center;
 }
 
 #head-title  {
     font-size: 24px;
     color: #f9faf8;
+}
+#logo-section {
     display: flex;
-    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    padding-left: 8px;
 }
 
 #links {
@@ -45,7 +56,8 @@ body {
 #first-section {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 3%;
 }
 
 #hero-text {
@@ -60,9 +72,14 @@ body {
     font-weight: bolder;
 }
 
+#message {
+    width: 80%;
+}
+
 #monkey-pic {
-    width: 350;
+    width: 600px;
     height: auto;
+    border-radius: 25px;
 }
 
 .body-img {
@@ -71,22 +88,38 @@ body {
     border-radius: 25px;
 }
 
+.body-img,
+.item-title,
+p   {
+    margin: 10px;
+}
+
+.item-title {
+    font-weight: bold;
+    font-size: large;
+}
+
 p {
     width: 250px;
 }
 
-#second-section {
+#second-section,
+#third-section {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-#second-title {
+#second-title,
+#third-title {
     display: flex;
     justify-content: center;
     padding: 40px;
 }
 
-#all-second {
+#all-second,
+#all-third,
+#all-fourth {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -94,16 +127,58 @@ p {
     padding: 40px;
 }
 
-#two-one,
-#two-two,
-#two-three,
-#two-four {
+.sub-section {
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
     width: 25%;
 }
 
 #third-section {
     background-color: #E5E7EB;
+}
+
+#all-fourth {
+    background-color: #3882f6;
+    margin: 50px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3%;
+    align-items: center;
+}
+
+#fourth-section {
+    overflow: hidden;
+    display: flex;
+}
+
+#fourth-title {
+    color: #f9faf8;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+#mug-text {
+    color: #f9faf8;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#mug {
+    height: 50px;
+    width: 120px;
+    color: #f9faf8;
+    font-weight:bold;
+    font-size: large;
+    background-color: #3882f6;
+    border: 2px solid #f9faf8;
+    border-radius: 15px;    
+}
+
+#footer {
+    justify-content: center;
+    font-size: smaller;
 }
